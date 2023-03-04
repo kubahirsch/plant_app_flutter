@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "425740778346",
+    "project_id": "zielonepogotowie-79f57",
+    "storage_bucket": "zielonepogotowie-79f57.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425740778346:android:bcc6ef36b95ffb91714313",
+        "android_client_info": {
+          "package_name": "com.example.zielonepogotowie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "425740778346-9h9q8uv2tvt8ht42tsraqqe1tnumtded.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zielonepogotowie",
+            "certificate_hash": "a25831ff3ff1631f444ef032ae29d24d57bad19e"
+          }
+        },
+        {
+          "client_id": "425740778346-hl05s44a4sklq0ngbfd7p19jr0m7hlha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcB7geO4orhOMuFqkymCR3T_9arGnXSfM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "425740778346-hl05s44a4sklq0ngbfd7p19jr0m7hlha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

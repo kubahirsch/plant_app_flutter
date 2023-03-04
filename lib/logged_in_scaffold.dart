@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:zielonepogotowie/pages/home_page.dart';
 import 'package:zielonepogotowie/pages/knowlage_page.dart';
 import 'package:zielonepogotowie/pages/social_page.dart';
+import 'package:zielonepogotowie/providers/user_provider.dart';
 import 'package:zielonepogotowie/widgets/custom_appbar.dart';
 
 class LoggedInScaffold extends StatefulWidget {
@@ -13,6 +15,16 @@ class LoggedInScaffold extends StatefulWidget {
 
 class _LoggedInScaffoldState extends State<LoggedInScaffold> {
   int _page = 0;
+  @override
+  void initState() {
+    getData();
+    super.initState();
+  }
+
+  Future<void> getData() async {
+    UserProvider userProvider = Provider.of(context, listen: false);
+    userProvider.refreshUserSnap();
+  }
 
   List<Widget> pages = const [
     HomeScreen(),

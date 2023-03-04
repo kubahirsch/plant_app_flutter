@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:zielonepogotowie/providers/user_provider.dart';
+
+import '../pages/profile_page.dart';
 
 class CustomAppBar extends StatefulWidget {
   const CustomAppBar({super.key});
@@ -10,15 +14,32 @@ class CustomAppBar extends StatefulWidget {
 class _CustomAppBarState extends State<CustomAppBar> {
   @override
   Widget build(BuildContext context) {
+    Map<String, dynamic>? user =
+        Provider.of<UserProvider>(context).getUserSnapAsMap;
+
+    if (user == null) {
+      return const Center(
+        child: CircularProgressIndicator(
+          color: Colors.white,
+        ),
+      );
+    }
+
     return AppBar(
       elevation: 0,
       backgroundColor: Colors.white,
-      leading: const Padding(
-        padding: EdgeInsets.fromLTRB(10, 10, 0, 0),
-        child: CircleAvatar(
-          radius: 48,
-          foregroundImage: NetworkImage(
-              'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'),
+      leading: InkWell(
+        onTap: () {
+          Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) => const ProfilePage(),
+          ));
+        },
+        child: Padding(
+          padding: EdgeInsets.fromLTRB(10, 10, 0, 0),
+          child: CircleAvatar(
+            radius: 48,
+            foregroundImage: NetworkImage(user['profilePicUrl']),
+          ),
         ),
       ),
       actions: const [

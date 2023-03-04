@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # zielonepogotowie
 
 A new Flutter project.
@@ -14,3 +15,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# Plant_aplikacja
+>>>>>>> e26b9fe4dcd78ba4b44a3323bc733306a5a17cc4

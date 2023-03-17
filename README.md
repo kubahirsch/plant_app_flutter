@@ -1,20 +1,10 @@
-<<<<<<< HEAD
-# zielonepogotowie
+## zielonepogotowie
 
-A new Flutter project.
+This is social app with firebase authentication. 
 
-## Getting Started
+## demo
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+https://user-images.githubusercontent.com/45521098/225955336-a29076ca-d57d-415e-901c-d66e7e930894.mp4
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-# Plant_aplikacja
->>>>>>> e26b9fe4dcd78ba4b44a3323bc733306a5a17cc4
